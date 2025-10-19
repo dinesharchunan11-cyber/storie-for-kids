@@ -1,0 +1,121 @@
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+   
+  
+  
+   
+
+    
+    
+}
+.this{
+    all: unset;
+}
+html,body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+}
+
+.main{
+   background: linear-gradient(to right, rgba(33, 209, 17, 0.3),rgba(108, 231, 83, 0.5) ,rgba(48, 190, 29, 0.9),rgba(108, 231, 83, 0.1));
+  color: white;
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+img{
+    height: 300px;
+    width: 400px;
+    cursor: pointer;
+    margin-left: 20px;
+     box-shadow: 5px 7px 10px  rgb(8, 228, 8);
+     transition: all ease 0.4s;
+   
+}
+img:hover{
+    box-shadow: 10px 10px 15px  rgb(8, 228, 8);
+    transform: translate(-3px , -3px);
+}
+p{
+    filter: drop-shadow(10px 10px 10px black);
+}
+ h2{
+    text-align: center;
+    text-shadow: 0 0 10px rgb(231, 228, 9);
+    margin-top: 20px;
+    padding: 10px;
+}
+.main a{
+    margin-left: 140px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(33, 209, 17, 0.3),rgba(108, 231, 83, 0.5) ,rgba(48, 190, 29, 0.9),rgba(108, 231, 83, 0.1));
+  color: white;
+  box-shadow: 10px 10px 10px black;
+  transition: all ease 0.4s;
+  margin-bottom: 10px;
+  
+   
+}
+a:hover{
+  box-shadow: 0px 0px  10px  rgb(15, 211, 195);
+
+}
+nav{
+     padding: 10px;
+    
+     margin-bottom: 30px;
+}
+
+.w{
+    text-align: center;
+    background: linear-gradient(to right, rgba(33, 209, 17, 0.3),rgba(108, 231, 83, 0.5) ,rgba(48, 190, 29, 0.9),rgba(108, 231, 83, 0.1));
+  color: white;
+  transition: all 0.6s ease;
+  box-shadow: 10px 20px 20px black;
+  margin: 50px;
+  border-radius: 40px;
+  transition: all ease 0.4s;
+}
+.w:hover{
+     border-radius: 60px;
+     box-shadow: 10px 10px 10px  green;
+   
+}
+hr{
+    height: 3px;
+    background-color: aqua;
+    margin-top: 10px;
+    transition: all ease 0.6s;
+}
+hr:hover{
+    width: 300px;
+}
+h1{
+    padding:20px
+}
+.s{
+    font-size: 30px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.images a{
+    all:unset
+}
+.full{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
