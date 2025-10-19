@@ -1,0 +1,42 @@
+
+
+pre{
+      white-space: pre-wrap;  
+         word-wrap: break-word; 
+}
+ .main h2{
+    text-align: center;
+    margin-bottom: 50px;
+  
+    
+   
+}
+.main nav{
+     padding-bottom: 20px;
+     cursor: pointer;
+   
+}
+a{
+    margin:70px;
+   border-radius: 5px;
+   text-shadow: dimgray;
+   padding:10px;
+   box-shadow: 5px 5px 10px rgb(14, 13, 17);
+ transition: all ease 0.4s;
+   
+}
+a:hover{
+     box-shadow: 5px 5px 10px rgb(236, 4, 4);
+
+}
+.main{
+    margin: 30px;
+    
+    padding:7px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgb(49, 240, 43);
+    background-color: rgba(27, 224, 224,0.4);
+}
+.ok{
+     background:linear-gradient(to right,rgba(247, 230, 4, 0.8),rgba(224, 147, 3,0.6),rgba(223, 74, 16,0.10));
+}
