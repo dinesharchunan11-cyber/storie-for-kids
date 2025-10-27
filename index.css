@@ -1,467 +1,178 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-html,body{
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     
-     background: linear-gradient(rgb(20, 19, 19));
-     margin: 0%;
-    
-    
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  background: black;
+  color: white;
 }
 
-.interface-main{
+/* HEADER AREA */
+.interface-main {
   background-image: url("pictures/magic.jpg");
-  height:600px;
-  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-
-
-}
-.interface{
-    display:inline-block;
-    margin-left: 70px;
-    margin-top: 20px;
-    vertical-align: top;
-    text-align: center;
-      cursor: pointer;
-      text-align: center;
-    
-    
-     
-    
-   
+  padding: 20px;
+  text-align: center;
 }
 
-.interfae-email{
-  cursor: url("pictures/e.jpg") ,pointer;
+/* Email box */
+.interface {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
 }
-
-
-
-
-
-
-/* icons */
-
-.interface-emailpic{
-    
-   height: 80px;
- 
-   width:50px;
-  
-   object-fit: contain;
-   
-   transition:all 0.4s ease;
-   
+.interface-emailpic {
+  height: 80px;
+  width: 50px;
+  transition: 0.3s;
   filter: drop-shadow(10px 10px 4px black);
-        cursor: url("pictures/e.jpg") 0 0 ,pointer
-    
-
-
-  
-   
-   
-   
 }
-.interface-emailpic:hover{
-    object-position: top;
-   
+.interface-emailpic:hover {
+  transform: translateY(-5px);
+}
+.interfae-email {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
 }
 
-.instra{
-   
-    width: 80px ;
-    margin-left:80px;
-  
-    height: 100px;
-    
-    object-fit: contain;
-    transition:all ease 0.4s;
-      filter: drop-shadow(10px 10px 4px black);
-    cursor: pointer;
+/* Heading animation */
+.interface2 {
+  margin: 20px auto;
+  display: inline-block;
+  text-align: center;
 }
-.instra:hover{
-    object-position: top;
-  
+.interface-heading {
+  font-size: 32px;
+  margin-top: 10px;
+  color: white;
 }
 
-
-.facebook{
-      display: inline-block;
-      margin-left:100px;
-       margin-bottom: 50px;
-       width: 50px ;
-       height: 80px;
-        object-fit: contain;
-       transition:all ease 0.4s;
-         filter: drop-shadow(10px 10px 4px black);
-           cursor: pointer;
-         
+/* Buttons Row */
+.home {
+  margin-top: 20px;
+}
+.home button,
+.age button,
+.about button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(to right, rgba(6, 237, 245, 0.8));
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home button:hover,
+.age button:hover,
+.about button:hover {
+  border-radius: 15px;
+  background: linear-gradient(to right, rgba(6, 188, 233, 0.8), rgba(53, 66, 241, 0.8));
 }
 
-
-.facebook:hover{
-    object-position: top;
-  
+/* Welcome Title */
+.welcome {
+  font-size: 50px;
+  margin: 20px auto;
+  padding: 15px;
+  display: inline-block;
+  box-shadow: 0 0 25px cyan;
+  transition: 0.3s;
+}
+.welcome:hover {
+  color: aqua;
+  border-radius: 30px;
 }
 
-.youtube{
-  
-      margin-left:100px;
-      display: block;
-       width: 50px ;
-        object-fit: contain;
-        height: 80px;
-         transition:all ease 0.4s;
-           filter: drop-shadow(10px 10px 4px black);
-             cursor: pointer;
+/* STORY LAYOUT */
+.bed {
+  background: black;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px pink;
 }
 
-.youtube:hover{
-    object-position: top;
-  
-}
-
-
-
-
-
-
-
-/* icons*/
-
-.interfae-email{
-    
-    text-decoration: none;
-    color:rgb(7, 1, 31);
-    font-size: 20px;
-    display: block;
-    transition: all ease 0.4s;
-    font-weight: bold;
-    
- 
-
-}
-
-.interfae-email:hover{
-    text-shadow: 10px 10px 3px black;
-    -webkit-text-stroke: 1px rgb(17, 3, 3);
-    font-size: 22px;
-}
-
-
-
-
-
-
-.interface2{
-    display: inline-block;
-   
-    margin-left: 400px;
-      text-align: center;
-}
-
-.interface-head-pic{
-    
-    height: 70px;
-    width: 200px;
-    
-    object-fit: contain;
-    transition: all 0.4s ease;
-   
-  
-   
-}
-.interface-head-pic:hover{
-    object-position: left;
-}
-.interface-heading{
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    margin-top: 0%;
-    margin-bottom: 10px;
-    font-size: 30px;
-    cursor:pointer;
-}
-
-.interface-heading:hover{
-      color: rgb(10, 204, 218);
-}
-
-
-
-
-/* welcome */
-  .welcome{
-    display: inline-block;
-    vertical-align: top;
-    margin-left:300px ;
-    font-size: 50px;
-    font-weight: bolder;
-    font-size: 60px;
-   padding:20px;
-
- 
-    box-shadow: 10px 10px 60px rgb(7, 195, 228);
-   transition:all ease 0.4s;
-   
-  }
-  .welcome:hover{
-    border-radius: 50px;
-     color:aqua;
-    
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-  }
-  /* anchor tages */
-
-  .home{
-    display: inline-block;
-
-    margin-left: 410px;
-    vertical-align: top;
-    margin-top: 20px;
-   
-    
-  }
-  .a1{
-    display: block;
-    margin-top: 20px;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;
-      -webkit-text-stroke: 1px;
-      transition: all ease 0.4s;
-  }
-
-  .a1:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-    background: linear-gradient(to right,rgba(6, 188, 233.0,4),rgba(53, 66, 241,0.4)),rgb(66, 8, 228)
-  }
-
-  .a2{
-    margin-top: 20px;
-    height: 40px;
-    margin-bottom: 10px;
-      border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;
-    transition: all ease 0.4s;
-  }
-  .a2:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-    background: linear-gradient(to right,rgba(6, 188, 233.0,4),rgba(53, 66, 241,0.4)),rgb(66, 8, 228)
-  }
-
-  .age1{
-    vertical-align: top;
-    margin-left: 1008px;
-  width: 100px;
-    height: 40px;
-    margin-bottom: 0%;
-      border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;
-    transition: all ease 0.4s;
-   
-  }
-    .age1:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-
-    background: linear-gradient(to right,rgb(6, 112, 233),rgb(53, 141, 241)),rgb(143, 177, 241);
-  }
-  
-  .age2{
-    margin-left: 1170px;
-      width: 100px;
-    height: 40px;
-   
-     vertical-align: top;
-     margin-bottom: 20px;
-       border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;
-    transition: all ease 0.4s;
-  }
-    .age2:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-    background: linear-gradient(to right,rgba(6, 188, 233.0,4),rgba(53, 66, 241,0.4)),rgb(66, 8, 228)
-  }
-  .up{
-      vertical-align: top;
-      margin-left: 282px;
-   
-        width: 100px;
-    height: 40px;
-      border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;  
-    transition: all ease 0.4s;   
-  }
-  
-    .up:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-    background: linear-gradient(to right,rgba(6, 188, 233.0,4),rgba(53, 66, 241,0.4)),rgb(66, 8, 228)
-  }
-
-.about-me{
-margin-left: 1169px;
-    width: 100px;
-    height: 40px;
-      border-radius: 5px;
-    border: none;
-    color:white;
-    background: linear-gradient(to right, rgba(6, 237, 245,0.8));
-    box-shadow: 10px 10px 10px black;
-    transition: all ease 0.4s;
-}
-
-  .about-me:hover{
-    border-radius: 15px;
-    -webkit-text-stroke: 2px;
-    background: linear-gradient(to right,rgba(6, 188, 233.0,4),rgba(53, 66, 241,0.4)),rgb(66, 8, 228)
-  }
-
-  /* bed time stories */
-
-  .bed{
-    margin-top:20px;
-    text-align: center;
-    color:white;
-    background-color: black;
-    height: 70px;
-    padding-top:30px;
-    box-shadow: 0px 0px 20px pink;
-  }
-
-
-/* stories */
-
-section{
-  
+.story {
   box-shadow: 3px 3px 10px 10px rgb(240, 153, 168);
   margin: 30px;
-  display: block;
-  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
 }
-.storie1{
+
+.storie1 {
   display: flex;
-  color: antiquewhite;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.storie1 img {
+  width: 350px;
+  height: auto;
+  margin: 10px;
+  filter: drop-shadow(0 5px 10px black);
+}
+dl {
+  margin: 20px;
+  max-width: 600px;
+}
+.full {
+  margin-top: 20px;
+  background: linear-gradient(to right, rgb(7,212,219), rgb(111,245,2));
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.full:hover {
+  background: limegreen;
+  color: white;
 }
 
-.storie1 img{
-     height: 400px;
-    width: 400px;
-    filter:drop-shadow(0 5px 10px black)
-   
-    
+/* THANKS FOOTER */
+.thanks {
+  background: blue;
+  padding: 20px;
+  text-align: center;
 }
-dl{
-  margin-left: 30px;
-  margin-top: 1px;
-  margin-bottom: 1px;
- 
-}
-
-   
-
-dt{
-
-  margin-bottom: 10px;
-}
-h3{
-  margin: 0%;
-}
-dt h1 {
-  text-shadow: 0 5px 10px black;
-}
-dt{
-  text-shadow: 0 10px 10px black;
-}
-.full{
-  margin-top: 320px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  
-  padding:20px;
-  background: linear-gradient(to right, rgba(7, 212, 219, 0.4),rgba(9, 233, 121, 0.4),rgb(111, 245, 2));
- font-weight: bold;
- cursor:pointer;
- box-shadow: 5px 5px 10px rgb(4, 223, 223);
- border-radius: 20px;
-transition: all  ease 0.4s;
- 
-}
-.full:hover{
- background-color: rgb(93, 221, 7);
- box-shadow: 7px 10px 10px rgb(233, 172, 4);
- border-radius: 30px;
- color:white;
-
-}
-/* thanks*/
-
-.thanks{
-  background-color: blue;
-  height: 150px;
-  padding-top: 20px;
-  cursor: url("pictures/e.jpg") ,pointer;
-
-  
- 
-
-}
-.thanks a{
-
-  margin:40px;
-  color: rgb(248, 241, 241);
-  text-shadow: 10px 10px 10px rgb(19, 224, 0);
+.thanks a {
+  margin: 10px;
+  color: white;
   border: 2px orange solid;
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
+  padding: 8px 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+.thanks a:hover {
+  background: linear-gradient(green, lime);
+  border-radius: 10px;
+}
 
-  
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .storie1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .storie1 img {
+    width: 90%;
+  }
+  .welcome {
+    font-size: 35px;
+  }
+  .home, .age, .about {
+    text-align: center;
+  }
 }
-.thanks a:hover{
-    transition: all 0.4s ease;
-  
-  border-radius: 10px  ;
-  background: linear-gradient(rgba(119, 243, 3,0.4),rgba(57, 243, 40,0.4),rgb(4, 75, 1));
-}
-.thanks h2{
 
-  color:white;
-  
-}
-hr{
-  margin-bottom: 25px;
-}
-#whole-page{
-  box-shadow: none;
-}
-#last{
- width: 100%;
-  background-color: rgb(211, 211, 216);
- 
+
 }
